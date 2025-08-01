@@ -45,15 +45,13 @@ if __name__ == '__main__':
     Main
     """
     # Gentoo Distfiles
-    # path = '/var/cache/distfiles/'
-    path = '/home/francis/distfiles/'
+    path = '/var/cache/distfiles/'
     distfiles_space = get_space_used(path)
     distfiles_list, distfiles_full_list, distfiles_count = get_files(path)
     # print('Total Files in Cache = {}'.format(distfiles_count))
     #
     # Apt Cache NG Cached Files
-    # path = '/var/tmp/gentoo/distfiles/'
-    path = '/home/francis/cachefiles/'
+    path = '/var/tmp/gentoo/distfiles/'
     cachefiles_space = get_space_used(path)
     cachefiles_list, cachefiles_full_list, cachefiles_count = get_files(path)
     #
