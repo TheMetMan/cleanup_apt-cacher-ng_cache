@@ -3,6 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
+# Local Files Not needed in Repo
+Copy2Bin.sh
+
 # C extensions
 *.so
 

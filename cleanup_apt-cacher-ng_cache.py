@@ -35,7 +35,7 @@ def get_files(_path):
     count = 0
     for (root, dirs, file) in os.walk(_path):
         for f in file:
-            count = count + 1
+            count += 1
             list.append(f)
             list_full.append(os.path.join(root, f))
     return list, list_full, count
@@ -44,6 +44,7 @@ if __name__ == '__main__':
     """
     Main
     """
+    print('Cleaning up the Apt Cacher NG Cache to save bloat!')
     # Gentoo Distfiles
     path = '/var/cache/distfiles/'
     distfiles_space = get_space_used(path)
